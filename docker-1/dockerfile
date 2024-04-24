@@ -1,0 +1,13 @@
+# imajı belirle linux, nodejs
+
+FROM node:21-alpine3.18
+
+# çalışma alanı oluştur
+
+WORKDIR /app
+
+# hangi dosyaları kopyalayacağımızı belirt
+
+COPY . . 
+# build yaparken çalıştırılacak komut
+CMD node hello.js 
